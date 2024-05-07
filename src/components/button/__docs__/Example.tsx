@@ -2,9 +2,7 @@ import React, { FC } from "react";
 import Button, { ButtonProps } from "../Button";
 
 const Example: FC<ButtonProps> = ({
-  disabled = false,
   onClick = () => {},
-  primary = true,
   size = "small",
   text = "Button",
 }) => {
@@ -20,9 +18,7 @@ const Example: FC<ButtonProps> = ({
       <Button
         size={size}
         text={text}
-        disabled={disabled}
         onClick={onClick}
-        primary={primary}
       />
     </div>
   );
